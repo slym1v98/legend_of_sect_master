@@ -1,0 +1,32 @@
+* text=auto
+
+# Text: LF để diff/merge ổn định giữa các máy
+*.cs text eol=lf
+*.meta text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Asset Unity dạng YAML
+*.unity text eol=lf
+*.prefab text eol=lf
+*.asset text eol=lf
+*.mat text eol=lf
+*.anim text eol=lf
+*.controller text eol=lf
+
+# Nhị phân: không chuẩn hoá, không diff
+*.png binary
+*.jpg binary
+*.psd binary
+*.aseprite binary
+*.wav binary
+*.ogg binary
+*.mp3 binary
+*.ttf binary
+*.otf binary
+
+# TODO chờ cài git-lfs: chuyển nhị phân lớn (psd, aseprite, wav, ogg, mp3)
+# sang LFS bằng `git lfs track` + `git lfs migrate`. Xem ADR-005.

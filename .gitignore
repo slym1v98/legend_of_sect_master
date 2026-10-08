@@ -1,0 +1,41 @@
+# Unity project nằm ở game/ (xem docs/adr/ADR-005-repo-structure.md)
+game/[Ll]ibrary/
+game/[Tt]emp/
+game/[Oo]bj/
+game/[Bb]uild/
+game/[Bb]uilds/
+game/[Ll]ogs/
+game/[Uu]serSettings/
+game/[Mm]emoryCaptures/
+game/[Rr]ecordings/
+game/.vs/
+game/.gradle/
+game/*.csproj
+game/*.sln
+game/*.suo
+game/*.user
+game/*.pidb
+game/*.booproj
+game/*.unityproj
+game/*.apk
+game/*.aab
+game/*.unitypackage
+game/*.app
+game/crashlytics-build.properties
+
+# Bí mật ký ứng dụng: KHÔNG BAO GIỜ commit
+*.keystore
+*.jks
+*.p12
+*.pem
+.env
+.env.*
+
+# Công cụ / hệ điều hành
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
