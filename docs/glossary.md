@@ -84,6 +84,7 @@
 | Thuốc Kháng Kiếp | `TribulationPill` | Giảm tỉ lệ thua |
 | Công pháp | `Technique` | |
 | Bí thuật | `SecretArt` | |
+| Đạo Ấn | `DaoMark` | Trait mở bằng Điểm Đạo Vận |
 | Bài Trắc Duyên | `DiscipleDraw` | Gacha |
 | Vé Trắc Duyên | `DrawTicket` | |
 | Luyện khí / Luyện đan | `Forging` / `Alchemy` | Hoạt động chế tác |
@@ -101,8 +102,8 @@
 | Cấp | `Level` |
 | Tier trang bị D/C/B/A/S | `GearTier` |
 
-## Cần quyết định
+## Quyết định đã chốt
 
-1. **"Thiện Nguyện"** (GDD §2.1 dùng cho trait mở bằng Đạo Vận) nghĩa là "lời nguyện lành", lệch với tu tiên. Đề xuất đổi thành **Đạo Ấn** (`DaoMark`). Chưa sửa GDD, chờ bạn quyết.
-2. Cõi **Địa** trùng chữ với hệ **Thổ**/`Earth` về tên code; đã tách `EarthRealm`. Nếu muốn tránh nhầm cả ở UI, cân nhắc đổi cõi Địa → **Đất** hoặc giữ nguyên.
-3. "Thể Tu" dùng cho chức nghiệp; "thể lực" là nhu cầu. Khác nghĩa, trùng âm "thể" — chấp nhận, hai chỗ hiển thị khác nhau.
+1. **Trait mở bằng Đạo Vận = "Đạo Ấn"** (`DaoMark`), thay "Thiện Nguyện". Đã cập nhật GDD và Phase 3.
+2. **Giữ tên cõi "Địa"**. Tên code tách `EarthRealm` (cõi) và `Earth` (ngũ hành Thổ) để không trùng.
+3. "Thể Tu" (chức nghiệp) và "thể lực" (nhu cầu) trùng âm: chấp nhận, hiển thị ở hai chỗ khác nhau.

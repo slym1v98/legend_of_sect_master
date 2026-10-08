@@ -11,7 +11,7 @@ Feature-complete cho nội dung chơi; chất lượng còn thô ở balance và
 |---|---|
 | Cõi Linh + Địa (12 vùng sương mù), tổng 18 vùng | Cân bằng cuối, tinh chỉnh kinh tế bằng dữ liệu thật |
 | Bí Cảnh tầng 1-25, 3 Yêu Vương | Gacha, IAP, quảng cáo, battle pass |
-| **Độ Kiếp** + Điểm Đạo Vận + Thiện Nguyện (trait) + Thuốc Kháng Kiếp | Bảng xếp hạng chính thức, sự kiện live |
+| **Độ Kiếp** + Điểm Đạo Vận + Đạo Ấn (trait) + Thuốc Kháng Kiếp | Bảng xếp hạng chính thức, sự kiện live |
 | **Linh căn** đầy đủ (kể cả dị linh căn) + tương khắc trong chiến đấu | Cosmetic bán được |
 | **Linh mạch** + buff công trình + highlight | Localization ngoài tiếng Việt |
 | Đủ ~20 công trình (thêm Pháp Bảo Các, Truyền Công Các, Luyện Công Trường, Cường Hoá Lô, quầy pháp bảo) | |
@@ -25,7 +25,7 @@ Feature-complete cho nội dung chơi; chất lượng còn thô ở balance và
 - **Gameplay:** Độ Kiếp (trận thiên kiếp ngắn, thua = trọng thương mất một phần cấp, **không mất vĩnh viễn**); ngũ hành tính sát thương/khắc; linh mạch trên bản đồ + áp buff; công pháp/bí thuật; cường hoá; mở cõi qua điều kiện vùng cuối + Đạo Vận (GDD §2.8).
 - **Kinh tế/Balance:** đường cong 3 cõi đạt mốc Độ Kiếp lần đầu ≤ 8 giờ và hết cõi Địa 40-80 giờ **trong mô phỏng**; chia thang trang bị tier D→S theo cõi.
 - **Art/Animation:** toàn bộ yêu thú 3 cõi (dùng biến thể màu có kiểm soát), công trình còn lại, hiệu ứng thiên kiếp, hiệu ứng ngũ hành, bản đồ sương mù 18 vùng.
-- **UI/UX:** màn Độ Kiếp, cây Thiện Nguyện, màn công pháp, bản đồ thế giới, hiển thị linh mạch.
+- **UI/UX:** màn Độ Kiếp, cây Đạo Ấn, màn công pháp, bản đồ thế giới, hiển thị linh mạch.
 - **Backend:** đăng nhập, cloud save (chống xung đột nhiều thiết bị cơ bản). Bảng xếp hạng để P4.
 - **QA/Analytics:** bộ kiểm hồi quy save/load qua phiên bản; kịch bản chơi tự động hoặc ghi lại cho đường đi chính.
 
@@ -52,7 +52,7 @@ Feature-complete cho nội dung chơi; chất lượng còn thô ở balance và
 | Kinh tế mất cân khi nội dung tăng | Mô phỏng bằng bảng tính trước khi chỉnh game |
 
 ## Cắt giảm được (theo thứ tự)
-1. Số vùng/cõi 6 → 5. 2. Biến thể yêu thú. 3. Một số bí thuật. 4. Thiện Nguyện còn ít dòng. Giữ nguyên: Độ Kiếp, ngũ hành, linh mạch.
+1. Số vùng/cõi 6 → 5. 2. Biến thể yêu thú. 3. Một số bí thuật. 4. Đạo Ấn còn ít dòng. Giữ nguyên: Độ Kiếp, ngũ hành, linh mạch.
 
 ## Ngoài phạm vi
 Monetization, bảng xếp hạng live, sự kiện, PvP, offline.

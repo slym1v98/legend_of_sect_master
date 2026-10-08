@@ -114,7 +114,7 @@ Thao tác người chơi: bấm đệ tử → menu ngữ cảnh (ăn / nghỉ /
   - **Thành công:** reset về cấp 1, nhận **+1 Điểm Đạo Vận**, +10% tiềm năng vĩnh viễn (mọi chỉ số cơ bản).
   - **Thất bại:** đệ tử trọng thương, mất một phần cấp, hồi sau thời gian chờ. **Không mất vĩnh viễn.**
 - **Thuốc Kháng Kiếp** (chế tác tại Đan Phòng): giảm tỉ lệ thất bại.
-- **Điểm Đạo Vận** dùng mở **Thiện Nguyện** (trait): dòng mạnh như "Thuộc tính Hoả +15%", "Hồi thể lực nhanh".
+- **Điểm Đạo Vận** dùng mở **Đạo Ấn** (trait): dòng mạnh như "Thuộc tính Hoả +15%", "Hồi thể lực nhanh".
 - **Công pháp / Bí thuật** học tại Truyền Công Các — chiếm slot, nâng cấp được.
 
 > Đánh đổi thiết kế: tái sinh kiểu EHT (mất sạch, mạnh lại) là loop nghiện. Giữ loop đó, bỏ hình phạt vĩnh viễn để tránh review xấu F2P.
@@ -241,7 +241,7 @@ Vật liệu (đệ tử săn / bí cảnh)
 |---|---|---|
 | Vàng | Giết yêu thú, đơn hàng | Xây / nâng công trình, chế tác cơ bản |
 | Linh Thạch | Bán đồ cho đệ tử, Yêu Vương, IAP | Trắc Duyên, vật hiếm, tiện ích |
-| Điểm Đạo Vận | Độ kiếp thành công | Mở Thiện Nguyện (trait) |
+| Điểm Đạo Vận | Độ kiếp thành công | Mở Đạo Ấn (trait) |
 
 #### Đòn bẩy kinh tế
 
