@@ -10,7 +10,7 @@
 | Vòng lặp lõi đầy đủ: săn → Tụ Bảo Các → chế tác → quầy → Linh Thạch | Cõi Linh, Địa |
 | Cõi Phàm: 6 vùng sương mù, Yêu Vương Phàm, Bí Cảnh tầng 1-10 | Bí Cảnh tầng 11-25 |
 | 4 chức nghiệp, tư chất, tính cách, cấp tới 30 | Linh căn đầy đủ, linh mạch, Độ Kiếp (xem ghi chú) |
-| Công trình: Đại Điện, Tụ Bảo Các, Nhà ở, Luyện Khí Phòng, Đan Phòng, quầy vũ khí, quầy đan, 4 dịch vụ, Nhiệm Vụ Đường, Luân Hồi Trì, Bí Cảnh Cổ Môn, Triệu Yêu Linh | Pháp Bảo Các, Truyền Công Các, Luyện Công Trường, Cường Hoá Lô |
+| Công trình: Đại Điện, Tụ Bảo Các, Nhà ở, Luyện Khí Phòng, Đan Phòng, quầy vũ khí, quầy giáp, quầy đan, 4 dịch vụ (16 công trình, Đại Điện ≤ cấp 3, xem `docs/content/buildings.md`), Nhiệm Vụ Đường, Luân Hồi Trì, Bí Cảnh Cổ Môn, Triệu Yêu Linh | Pháp Bảo Các, Truyền Công Các, Luyện Công Trường, Cường Hoá Lô |
 | Quest tân thủ (dẫn qua phần đã có) | Hằng ngày/tuần, sự kiện |
 | Sương mù: cơ chế dọn vùng | Cloud save, bảng xếp hạng |
 | Chọn nhiều đệ tử + giao vùng hàng loạt | Gacha, IAP, quảng cáo |
