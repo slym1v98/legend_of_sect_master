@@ -138,6 +138,6 @@ Cõi Địa chỉ một bậc: tiến trình dựa vào **cường hoá +1 → +
 ## 8. Điểm cần quyết sau
 
 1. **Cõi Địa chỉ một bậc trang bị (S)**: xác nhận ở dòng tiền.
-2. **Thuốc đột phá**: GDD §2.6 nhắc nhưng chưa định nghĩa cơ chế. Chưa đưa vào danh mục; cần quyết có hay bỏ khỏi GDD.
+2. ~~Thuốc đột phá~~: **đã bỏ** khỏi GDD §2.6 (không có cơ chế; Độ Kiếp đã đảm nhiệm vai trò đột phá). GDD §2.2 "nguyên liệu đột phá" đổi thành "vật liệu hiếm".
 3. **Bí Cảnh phần thưởng**: bảng rơi theo tầng chưa lập; thuộc dòng tiền.
 4. **Số loại vật liệu 69** có thể nhiều so với giá trị chơi; cân nhắc hợp nhất ở dòng tiền nếu nhiều món không có công thức dùng.

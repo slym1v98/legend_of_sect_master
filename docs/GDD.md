@@ -152,7 +152,7 @@ Thao tác người chơi: bấm đệ tử → menu ngữ cảnh (ăn / nghỉ /
 #### Yêu Vương (field boss)
 
 - Kích hoạt tại **Triệu Yêu Linh** → triệu hồi Yêu Vương ở vùng ngoài.
-- Cả tông cùng đánh → thưởng lớn (nguyên liệu đột phá, Linh Thạch).
+- Cả tông cùng đánh → thưởng lớn (vật liệu hiếm, Linh Thạch).
 - Có thời gian hồi kích hoạt.
 
 #### Ngũ hành trong chiến đấu
@@ -254,7 +254,7 @@ Nhân lực: đệ tử no / đủ ngủ thì mới đi săn. Giữ nhịp phụ
 | Lớp | Nơi | Nội dung |
 |---|---|---|
 | Luyện khí | Luyện Khí Phòng | Vũ khí theo chức nghiệp + hệ ngũ hành; tier D/C/B/A/S theo cõi |
-| Luyện đan | Đan Phòng | Đan hồi phục, thuốc nâng chỉ số tạm, Kháng Kiếp, thuốc đột phá |
+| Luyện đan | Đan Phòng | Đan hồi phục, thuốc nâng chỉ số tạm, Kháng Kiếp, Triệu Yêu Hương |
 | Pháp bảo | Pháp Bảo Các | Vòng tay, nhẫn, phù |
 | Cường hoá | Cường Hoá Lô | +1 → +10; **cho thu hồi trang bị cũ** (sửa phàn nàn EHT) |
 
