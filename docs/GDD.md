@@ -400,6 +400,8 @@ PvP đấu trường, bang hội / guild raid, tiến trình offline — đều 
 | Rủi ro | Giảm thiểu |
 |---|---|
 | Bị coi là clone EHT | 3 hệ thống đặc trưng (ngũ hành, linh mạch, Độ Kiếp) + sương mù thay độ khó |
+| Bị coi là clone game tông môn tu tiên isometric khác (đặc biệt 宗门经理人 - Sect Master, Steam, Q4 2026: cũng pixel isometric, đệ tử tự đi săn và tự tiêu tiền tại công trình, chế tác, cộng hưởng theo bố trí) | Bộ khung chung là thể loại, không tránh được; tách bằng **(1)** linh mạch là tài nguyên bản đồ gắn ngũ hành (không phải cộng hưởng từ đường/trang trí do người chơi dựng), **(2)** sương mù thay độ khó, **(3)** Độ Kiếp rủi ro-thưởng, **(4)** điều khiển nhu cầu đệ tử thủ công, **(5)** mobile F2P so với PC premium. Kiểm chứng ở playtest P1-P2: người chơi tự nêu được khác biệt. Chi tiết: `docs/name-and-competitor-review.md` |
+| Tên "Sect Master" trùng nhiều sản phẩm, khó tìm kiếm trên cửa hàng | Giữ tên LegendOfSectMaster (đã chốt); phân biệt bằng tên hiển thị đầy đủ, biểu tượng, từ khoá cửa hàng riêng; tra nhãn hiệu chính thức trước P4 |
 | Quản lý thủ công mệt khi đệ tử đông | Chọn nhiều, giao vùng hàng loạt, giới hạn slot ở EA |
 | Cân bằng kinh tế chuỗi cung ứng | Bảng tính kinh tế riêng, thử nghiệm sớm ở vertical slice |
 | Isometric tốn asset | Công trình cố định hướng, tái dùng sprite, 4 chức nghiệp dùng chung khung animation |
@@ -421,6 +423,8 @@ PvP đấu trường, bang hội / guild raid, tiến trình offline — đều 
 | Hình ảnh | Pixel art chibi **isometric**, tông tu tiên |
 | Tiến trình offline | Không có trong EA |
 | Độ kiếp thất bại | Mất một phần cấp, không mất đệ tử vĩnh viễn |
+| Tên game | Giữ "LegendOfSectMaster" (xem `docs/name-and-competitor-review.md`) |
+| Tên trait mở bằng Điểm Đạo Vận | Đạo Ấn (thay "Thiện Nguyện") |
 
 ---
 
