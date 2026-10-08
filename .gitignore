@@ -39,3 +39,6 @@ game/crashlytics-build.properties
 Thumbs.db
 __pycache__/
 *.pyc
+
+# Pilot: ảnh sinh ra
+tools/pilot/out/
