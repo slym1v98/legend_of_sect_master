@@ -1,6 +1,6 @@
 # Mô hình kinh tế khung — Phase 0
 
-**Trạng thái:** Phần 1 (thời gian tiến trình) xong. Phần 2 (dòng tiền) chưa làm.
+**Trạng thái:** Phần 1 (thời gian tiến trình) và phần 2 (dòng tiền) xong ở mức khung.
 **Liên quan:** GDD §2.5, §8, §9; `phases/phase-0-preproduction.md`.
 
 ## Phần 1 — Thời gian tiến trình
@@ -43,10 +43,45 @@ Một đệ tử dẫn đầu đi từ cấp 1 tới cap của từng cõi, Đ�
 4. **"Hết cõi Địa" giả định** Độ Kiếp ở cap 30 và 60 rồi leo cap 100, mở cõi qua điều kiện vùng + Đạo Vận (GDD §2.8). Điều kiện mở khoá có thể chặn lâu hơn thời gian cày cấp.
 5. **Tốc độ XP theo vùng là giả định thẳng** (`3000·L`), chưa gắn với bảng vùng/yêu thú thật.
 
-## Phần 2 — Dòng tiền (chưa làm)
+## Phần 2 — Dòng tiền
 
-Cần: nguồn/đầu ra Vàng, Linh Thạch, Điểm Đạo Vận theo giờ chơi; giá dịch vụ, chế tác, xây/nâng công trình; kiểm tra không lạm phát và không kẹt. Phụ thuộc danh sách công trình và vật phẩm chi tiết (chưa có).
+`economy_flow.py` (stdlib, `python3 -I economy_flow.py`, có assert). Lấy thời gian từng cõi từ `progression_model.py`, **không nhân đôi nguồn**.
+
+### Mô hình
+
+Chu trình đúng GDD §2.5: đệ tử săn → nhận Vàng + vật liệu → tông mua vật liệu (Tụ Bảo Các) → đệ tử chi Vàng tại tông (nhu cầu, trang bị, kỹ năng) → tông trừ giá vốn → phần ròng chi nâng cấp.
+
+| Tham số | Giá trị | Ý nghĩa |
+|---|---|---|
+| Số đệ tử trung bình | 8 / 14 / 22 | Phàm / Linh / Địa (slot tối đa 30) |
+| Vàng rơi, vật liệu rơi | 30 / 20 mỗi giờ săn mỗi cấp | Cá nhân đệ tử |
+| Tông mua vật liệu | 70% | Qua Tụ Bảo Các |
+| Đệ tử chi tại tông | 30% nhu cầu, 45% trang bị, 8% kỹ năng | Còn 17% tiết kiệm |
+| Giá vốn tông trên doanh thu | 35% / 20% / 40% | Nhu cầu / trang bị / kỹ năng |
+| Nâng Đại Điện cấp k→k+1 | `450 · 1.9^(k-1)` | Công trình khác = 3 × chi Đại Điện cùng cõi |
+
+### Kết quả
+
+| Cõi | Giờ | Cấp TB | Thu ròng tông | Chi nâng cấp | Chi/Thu | Ngân sách mỗi món trang bị |
+|---|---|---|---|---|---|---|
+| Phàm | 7.2 | 18.2 | 7,839 | 5,220 | 0.67 | 258 |
+| Linh | 20.0 | 36.6 | 77,299 | 42,302 | 0.55 | 1,454 |
+| Địa | 41.8 | 61.2 | 423,923 | 290,149 | 0.68 | 10,148 |
+
+- Chi/Thu cân bằng giữa các cõi (chênh 1.25×, ngưỡng 1.4×): không cõi nào quá rẻ hoặc quá đắt.
+- Ví đệ tử tiết kiệm 17%: không âm.
+- Linh Thạch miễn phí tới hết cõi Địa ≈ **60 lượt kéo**; chạm pity (50 lượt) sau **58 giờ**.
+
+## Điều cần biết trước khi tin con số
+
+Những điểm của phần 1 vẫn đúng. Thêm:
+
+6. **Tham số nâng cấp được chỉnh để qua chính ngưỡng của mô hình.** Ngưỡng (Chi/Thu 0.5–0.7, chênh ≤ 1.4×, pity 30–80 giờ) do tôi đặt, không lấy từ dữ liệu. Lưới quét `GH_BASE` 100–800 × `GH_GROWTH` 1.5–2.0 chỉ có **một** cấu hình qua cả hai điều kiện đầu (450, 1.9): biên rất hẹp, chỉ cần đổi một tham số khác là vỡ. Coi đây là "mô hình nhất quán nội bộ", chưa phải "kinh tế đã cân bằng".
+7. **Ngân sách mỗi món tăng ~39× từ Phàm lên Địa** (258 → 10,148). Có chủ đích (cõi sau giàu hơn), nhưng cần playtest xem đệ tử có đủ tiền mua đồ đúng nhịp.
+8. **Chưa mô hình:** Đạo Vận (cung/cầu của Đạo Ấn), chi tiết chế tác (thời gian, tỉ lệ thất bại, hàng đợi), bảng rơi Bí Cảnh, chi phí hồi sinh, cường hoá +1→+10, thu hồi trang bị cũ. Phần Linh Thạch chỉ tính nguồn miễn phí và pity, chưa tính giá cửa hàng IAP.
+9. **Số đệ tử theo cõi (8/14/22) là giả định** về tốc độ mở slot; thực tế phụ thuộc Nhà ở và gacha.
+10. **Mọi giá trị rơi và tỉ lệ chi** là điểm khởi đầu không có nguồn tham chiếu; số liệu EHT chưa thu thập (GDD §9).
 
 ## Exit criterion P0 liên quan
 
-"Bảng kinh tế khung cho ra đúng hai mốc 8 giờ và 40-80 giờ trong mô hình": **đạt cho phần thời gian**; phần dòng tiền còn mở.
+"Bảng kinh tế khung cho ra đúng hai mốc 8 giờ và 40-80 giờ trong mô hình": **đạt** cho thời gian (phần 1) và có thêm dòng tiền nhất quán (phần 2), với các lưu ý ở trên. Chưa phải bằng chứng cân bằng; kiểm chứng thật ở Phase 1-2.
